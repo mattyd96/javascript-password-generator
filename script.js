@@ -21,7 +21,7 @@ function generatePassword() {
   const upperString = lowerString.toUpperCase();
   const numericString = "1234567890";
   const specialString = " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
-  //string used to build the end string used for creating the password
+  //end string used for creating the password
   let charPool = "";
 
   //get user prefferences for password structure
@@ -69,6 +69,7 @@ function getInput() {
     if(length >= 8 && length <= 128) {isValidated = true}
   }
   
+  //reset validation status
   isValidated = false;
 
   //get user options for lower/uppercase, numeric/special characters
